@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "InstaScroll",
+  "version": "1.0",
+  "description": "Auto scroll to next Instagram reel after one ends.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/reels/*"],
+      "js": ["index.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["scripting"]
+}
