@@ -1,4 +1,13 @@
 
+let scrollingEnabled = true;
+
+document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.key === 'w') {
+        scrollingEnabled = !scrollingEnabled;
+        console.log(`Auto-scroll is now ${scrollingEnabled ? 'enabled' : 'disabled'}`);
+    }
+});
+
 function getCurrentReelVideo() {
     const videos = Array.from(document.querySelectorAll('video'));
     for (let i = 0; i < videos.length; i++) {
@@ -63,7 +72,7 @@ function waitForVideoAndScroll() {
 
 
     video.addEventListener('ended', () => {
-        if(!video.paused) {
+        if (!video.paused && scrollingEnabled) {
             scrollToNextVideo("down");
         }
     });
