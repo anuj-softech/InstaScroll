@@ -20,7 +20,7 @@ InstaScroll is a lightweight Chrome extension that brings hands-free, auto-scrol
 
 - Visit [Instagram](https://www.instagram.com) and go to the Reels section.
 - Let the video play — once it's done, InstaScroll will automatically scroll to the next.
-- Disable extension to turn auto-scroll  off.
+- Press w to turn auto-scroll  off and on.
 
 ## 🤝 Contributing
 
